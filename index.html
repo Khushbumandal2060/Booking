@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nepal Hotels Booking</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li
+          style="
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            font-family: 'Arial', sans-serif;
+          "
+        >
+          The <span style="font-style: italic">Hotel</span> Booking
+        </li>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Welcome to Nepal Hotels Booking</h1>
+    </header>
+    <div class="back">
+      <!-- Search bar -->
+      <div class="search">
+        <form id="searchForm" onsubmit="searchFunction(); return false;">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search..."
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <section id="regions" class="hotels">
+        <div class="region">
+          <div class="card">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/6a/72/1a/exterior.jpg?w=700&h=-1&s=1"
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Hotel Hayat</h2>
+              <p>
+                Welcome to hayat, a modern hotel designed for the multi-tasking 
+                traveller Set on 37 acres of landscaped grounds, Hyatt Regency Kathmandu
+                is a luxury five-star hotel designed in traditional Newari-style
+                architecture, ideally located only 4 kilometres away from the
+                international airport. Situated in a city with a plethora of
+                ancient sites and fascinating architecture, our hotel is a
+                gateway to the city’s top attractions like Boudhanath,
+                Pashupatinath, Basantapur, Thamel, Bhaktapur Durbar Square,
+                Patan Durbar Square and much more. You not only experience
+                luxurious hospitality, but you also get a cultural fest while at
+                Hyatt Regency Kathmandu.
+              </p>
+              <p>Location: Kathmandu</p>
+              <p>Price: Rs. 5000 per night</p>
+              <button class="book-btn" data-region="Hotel Hayat">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="region">
+          <div class="card">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/252046750.jpg?k=4c6fdbf61c8564fc4a488074f6b2083fbb9b400bfbb6914a0211267ac02e78bc&o=&hp=1"
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Hotel Soaltee</h2>
+              <p>
+                A modern hotel designed for the multi-tasking 
+                traveller at its finest at our 5-star hotel, spanning 12acres of
+                picturesque landscape. With 285 elegantly furnished rooms, we offer
+                the largest suite selection in the area. Indulge in a culinary journey 
+                with our diverse range of multi-cuisine and specialty dining options. 
+                Conveniently situated just minutes away from the bustling City Center,
+                premier shopping districts,cultural landmarks, and entertainment venues,
+                our hotel provides easy access to all the attractions the city has to offer.
+              </p>
+              <p>Location: Pokhara</p>
+              <p>Price:Rs. 2500 per night</p>
+              <button class="book-btn" data-region="Hotel Soaltee">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more regions as needed -->
+        <div class="region">
+          <div class="card">
+            <img 
+               src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI="
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Hotel Annapurna</h2>
+              <p>
+                Experience luxury at its finest at our 5-star hotel, spanning 12
+                acres of picturesque landscape located in the heart of the Pokhara.
+                With 278 elegantly furnished rooms, we offer the largest suite 
+                selection in the area. Indulge in a culinary journey with our diverse
+                range of multi-cuisine and specialty dining options. Conveniently 
+                situated just minutes away from the bustling City Center, premier 
+                shopping districts,cultural landmarks, and entertainment venues, our
+                hotel provides easy access to all the attractions the city has to offer.
+              </p>
+              <p>Location: Pokhara</p>
+              <p>Price:Rs. 3000 per night</p>
+              <button class="book-btn" data-region="Hotel Annapurna">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="regions" class="hotels">
+        <div class="region">
+          <div class="card">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/535129105.jpg?k=4150d81b27d1b18a7b3de0517a7aefd970e50eac818f94d2ab673a82f2c4b923&o=&hp=1"
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Hotel Everest</h2>
+              <p>
+                Experience luxury at its finest at our 5-star hotel, spanning 12
+                acres of picturesque landscape. With 285 elegantly furnished
+                rooms, we offer the largest suite selection in the area. Indulge
+                in a culinary journey with our diverse range of multi-cuisine
+                and specialty dining options. Conveniently situated just minutes
+                away from the bustling City Center, premier shopping districts,
+                cultural landmarks, and entertainment venues, our hotel provides
+                easy access to all the attractions the city has to offer.
+              </p>
+              <p>Location: Kathmandu</p>
+              <p>Price:Rs. 2100 per night</p>
+              <button class="book-btn" data-region="Hotel Everest">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="region">
+          <div class="card">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/178858795.jpg?k=2df704d92c8a77907bac21baee3ecd4fc0fbad41994ab7340206c7d7a4f76748&o=&hp=1"
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Chitwan lodge and resort</h2>
+              <p>
+                Experience luxury at its finest at our 5-star hotel, spanning 12
+                acres of picturesque landscape. With 285 elegantly furnished
+                rooms, we offer the largest suite selection in the area. Indulge
+                in a culinary journey with our diverse range of multi-cuisine
+                and specialty dining options. Conveniently situated just minutes
+                away from the bustling City Center, premier shopping districts,
+                cultural landmarks, and entertainment venues, our hotel provides
+                easy access to all the attractions the city has to offer.
+              </p>
+              <p>Location: Chitwan</p>
+              <p>Price:Rs. 2500 per night</p>
+              <button class="book-btn" data-region="Chitwan lodge and resort">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more regions as needed -->
+        <div class="region">
+          <div class="card">
+            <img
+               src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/131253915.jpg?k=4894c3dd0954030b3338098e9deb2230cc713b6db762a9e6884ecbcc9ccc30c9&o=&hp=1"
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Hotel Royal Emperor</h2>
+              <p>
+                Experience luxury at its finest at our 5-star hotel, spanning 10
+                acres of picturesque landscape. With 289 elegantly furnished
+                rooms, we offer the largest suite selection in the area. Indulge
+                in a culinary journey with our diverse range of multi-cuisine
+                and specialty dining options. Conveniently situated just minutes
+                away from the bustling City Center, premier shopping districts,
+                cultural landmarks, and entertainment venues, our hotel provides
+                easy access to all the attractions the city has to offer.
+              </p>
+              <p>Location: Kathmandu</p>
+              <p>Price:Rs. 4000 per night</p>
+              <button class="book-btn" data-region="Hotel Royal Emperor">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="regions" class="hotels">
+        <div class="region">
+          <div class="card">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/516693307.jpg?k=bdfc87f6c9722cdacf6a8d96440ef0bd5f4ae0782c12e2ccba5344add1bc0730&o=&hp=1"
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Kathmandu</h2>
+              <p>
+                Kathmandu, Nepal's capital, captivates with ancient temples,
+                vibrant markets, and bustling streets. UNESCO World Heritage
+                Sites like Durbar Squares and Swayambhunath Stupa offer rich
+                cultural experiences. Sample diverse cuisines, explore tranquil
+                gardens, and embark on Himalayan adventures. Kathmandu is a
+                vibrant blend of history, spirituality, and adventure.
+              </p>
+              <p>Location: Kathmandu</p>
+              <p>Price:Rs. 1500 per night</p>
+              <button class="book-btn" data-region="Kathmandu">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="region">
+          <div class="card">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/516693309.jpg?k=919d0b18f4332909b80033f5989f35e0cd9db689a1601cde3af9d3e1810a227c&o=&hp=1"
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Hotel kutumba</h2>
+              <p>
+                Chitwan which is also known as"heart of the jungle" Nested at 
+                the foot of the Himalayas,Chitwan has a particularly rich flora 
+                and fauna and is home to one of the  last population of single-horned 
+                asiatic rhinoceros and also one of the last refuges of the Bengal Tiger 
+                vibrant markets, and bustling streets. UNESCO World Heritage
+                Sites like chitwan national park  offer rich unforgettable
+                 experiences.It is also famous for elephantride, Sample diverse 
+                cuisines, explore tranquil gardens, and  adventures. Chitwan is a
+                vibrant blend of history, spirituality, and adventure.
+              </p>
+              <p>Location: Chitwan</p>
+              <p>Price:Rs. 2000 per night</p>
+              <button class="book-btn" data-region="Hotel kutumba">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more regions as needed -->
+        <div class="region">
+          <div class="card">
+            <img
+              src="https://c1.wallpaperflare.com/preview/275/891/786/buddha-nepal-hindu-buddhism.jpg"
+              alt="Kathmandu"
+              height="400"
+              width="500"
+            />
+            <div class="card-content">
+              <h2>Hotel Mustang</h2>
+              <p>
+                Kathmandu, capital of Nepa.It lies in a hilly region near the 
+                confluence of the Bagmati and Vishnumati rivers,It is famous for
+                it's religious monuments captivates with ancient temples,vibrant 
+                markets, and bustling streets. UNESCO World Heritage Sites like
+                Durbar Squares and Swayambhunath Stupa offer rich cultural experiences.
+                Sample diverse cuisines, explore tranquil gardens, and embark on Himalayan
+                adventures. Kathmandu is avibrant blend of history, spirituality, and adventure.
+              </p>
+              <p>Location: Kathmandu</p>
+              <p>Price:Rs. 1500 per night</p>
+              <button class="book-btn" data-region="Hotel Mustang">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Book Your Hotel</h2>
+        <form id="bookingForm">
+          <label for="region">Region:</label>
+          <input
+            type="text"
+            id="bookingRegion"
+            name="region"
+            readonly
+            required
+          />
+          <label for="name">Your Name:</label>
+          <input type="text" id="bookingName" name="name" required />
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" name="startDate" required />
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" name="endDate" required />
+          <label for="guests">Number of Guests:</label>
+          <input
+            type="number"
+            id="bookingGuests"
+            name="guests"
+            min="1"
+            required
+          />
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>Contact: khushbu@nepalhostbooking.com</p>
+        <div class="social-media">
+          <a href="#">
+            <img
+              src="https://w7.pngwing.com/pngs/69/315/png-transparent-computer-icons-facebook-inc-logo-facebook-blue-text-rectangle-thumbnail.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr49Rh7u2YlXMZa29tML5of7T7HDsfCG4i8esVhPvLHg&s"
+              alt="Twitter"
+            />
+          </a>
+          <!-- Add more social media icons as needed -->
+        </div>
+      </div>
+      <p>&copy; 2024 Nepal Host Booking. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
