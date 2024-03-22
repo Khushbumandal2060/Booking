@@ -1,0 +1,212 @@
+<!-- booking.html -->
+
+<!-- booking.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        background-image: url("https://www.wisdomlib.org/uploads/photos/overview-at-night.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh; /* Ensure the main section covers the viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        min-width: 30%; /* Increased form width */
+        padding: 40px; /* Increased padding */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Add a semi-transparent white background */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <title>Nepal Hotels Booking - Booking</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li
+          style="
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            font-family: 'Arial', sans-serif;
+          "
+        >
+          The <span style="font-style: italic">Hotel</span> Booking
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="places.html">Places</a>
+        </li>
+        <li>
+          <a href="booking.html">Booking</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Book Your Stay</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Make Your Reservation</h2>
+        <form id="reservationForm" action="#" method="post">
+          <label for="place">Place:</label>
+          <input type="text" id="place" name="place" required />
+
+          <label for="hotel">Hotel Name:</label>
+          <input type="text" id="hotel" name="hotel" required />
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="check-in">Check-In Date:</label>
+          <input type="date" id="check-in" name="check-in" required />
+
+          <label for="check-out">Check-Out Date:</label>
+          <input type="date" id="check-out" name="check-out" required />
+
+          <label for="rooms">Number of Rooms:</label>
+          <select id="rooms" name="rooms" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Add more options as needed -->
+          </select>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("reservationForm");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission behavior
+
+          // Retrieve form data
+          var place = document.getElementById("place").value;
+          var hotel = document.getElementById("hotel").value;
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var checkInDate = document.getElementById("check-in").value;
+          var checkOutDate = document.getElementById("check-out").value;
+          var rooms = document.getElementById("rooms").value;
+
+          // You can add further validation if needed before submission
+
+          // Display a confirmation message
+          var confirmationMessage =
+            "Your reservation details:\n" +
+            "Place: " +
+            place +
+            "\n" +
+            "Hotel Name: " +
+            hotel +
+            "\n" +
+            "Full Name: " +
+            name +
+            "\n" +
+            "Email: " +
+            email +
+            "\n" +
+            "Check-In Date: " +
+            checkInDate +
+            "\n" +
+            "Check-Out Date: " +
+            checkOutDate +
+            "\n" +
+            "Number of Rooms: " +
+            rooms;
+
+          alert(confirmationMessage);
+
+          // Reset the form
+          form.reset();
+        });
+      });
+    </script>
+
+    <footer>
+      <div class="footer-content">
+        <p>Contact: khushbu@nepalhostbooking.com</p>
+        <div class="social-media">
+          <a href="#">
+            <img
+              src="https://w7.pngwing.com/pngs/69/315/png-transparent-computer-icons-facebook-inc-logo-facebook-blue-text-rectangle-thumbnail.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr49Rh7u2YlXMZa29tML5of7T7HDsfCG4i8esVhPvLHg&s"
+              alt="Twitter"
+            />
+          </a>
+          <!-- Add more social media icons as needed -->
+        </div>
+      </div>
+      <p>&copy; 2024 Nepal Host Booking. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
