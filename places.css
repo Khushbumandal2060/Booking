@@ -1,0 +1,131 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+nav {
+  position: fixed; /* Fix the navbar position */
+  top: 0; /* Align the navbar to the top of the viewport */
+  width: 100%; /* Make the navbar full-width */
+  display: flex;
+  background-color: #333;
+  padding: 10px 0;
+  min-height: 40px;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  margin-top: 5vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  max-width: calc(30% - 40px); /* Adjust the width of each card */
+  margin: 20px; /* Add margin around each card */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fefefe;
+}
+
+.card img {
+  width: 100%; /* Make the image fill the width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media img {
+  width: 30px;
+  margin-right: 10px;
+}
